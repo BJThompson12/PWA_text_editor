@@ -12,6 +12,8 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
+      editor: './src/js/editor.js',
+      header: './src/js/header.js'  
     },
     output: {
       filename: '[name].bundle.js',
@@ -22,7 +24,7 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         // name of the app
-        title: 'J.A.T.E.',
+        title: 'JATE',
       }),
 
       // Injects our custom service worker
